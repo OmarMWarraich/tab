@@ -35,7 +35,7 @@ const Page = () => {
         </TouchableOpacity>
       </Link>
 
-      <Link href={"/tabs"} replace asChild>
+      <Link href={"/tabs/list"} replace asChild>
         <TouchableOpacity
           style={{
             flexDirection: "row",
@@ -45,6 +45,20 @@ const Page = () => {
           }}
         >
           <Text style={{ fontSize: 18 }}>Open tabs</Text>
+          <Ionicons name="arrow-forward" size={18} />
+        </TouchableOpacity>
+      </Link>
+
+      <Link href={"/drawer/list"} replace asChild>
+        <TouchableOpacity
+          style={{
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            padding: 8,
+          }}
+        >
+          <Text style={{ fontSize: 18 }}>Open drawer</Text>
           <Ionicons name="arrow-forward" size={18} />
         </TouchableOpacity>
       </Link>

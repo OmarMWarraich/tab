@@ -24,6 +24,7 @@ const RootLayout = () => {
         options={{ presentation: "modal", title: "Disclaimer" }}
       />
       <Stack.Screen name="tabs" options={{ headerShown: false }} />
+      <Stack.Screen name="drawer" options={{ headerShown: false }} />
     </Stack>
   );
 };

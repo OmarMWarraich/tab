@@ -23,6 +23,7 @@ const RootLayout = () => {
         name="util/disclaimer"
         options={{ presentation: "modal", title: "Disclaimer" }}
       />
+      <Stack.Screen name="tabs" options={{ headerShown: false }} />
     </Stack>
   );
 };

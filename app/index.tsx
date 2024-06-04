@@ -1,7 +1,7 @@
 import { Link } from "expo-router";
 import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
-import Ionicons from "@expo/vector-icons/Ionicons";
+import { Ionicons } from "@expo/vector-icons";
 
 const Page = () => {
   return (
@@ -31,6 +31,20 @@ const Page = () => {
           }}
         >
           <Text style={{ fontSize: 18 }}>Open disclaimer</Text>
+          <Ionicons name="arrow-forward" size={18} />
+        </TouchableOpacity>
+      </Link>
+
+      <Link href={"/tabs"} replace asChild>
+        <TouchableOpacity
+          style={{
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            padding: 8,
+          }}
+        >
+          <Text style={{ fontSize: 18 }}>Open tabs</Text>
           <Ionicons name="arrow-forward" size={18} />
         </TouchableOpacity>
       </Link>
